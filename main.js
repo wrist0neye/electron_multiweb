@@ -34,7 +34,7 @@ function createWindow() {
     } else {
         loadURL(mainWindow);
     }
-    
+    mainWindow.webContents.openDevTools();
     // Uncomment the following line of code when app is ready to be packaged.
     // loadURL(mainWindow);
 
