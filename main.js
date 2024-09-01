@@ -15,11 +15,11 @@ function isDev() {
 function createWindow() {    
     // Create the browser window.
     mainWindow = new BrowserWindow({
-        width: 800,
-        height: 600,
+        width: 1400,
+        height: 800,
         webPreferences: {
             nodeIntegration: true,
-            preload: path.join(__dirname, 'preload.js'),
+            // preload: path.join(__dirname, 'preload.js'),
             // enableRemoteModule: true,
             // contextIsolation: false
         },

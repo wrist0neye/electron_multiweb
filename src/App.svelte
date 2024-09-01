@@ -27,12 +27,19 @@
 		margin: 0 auto;
 		height:100%;
 		padding:10px 10px;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
 	}
 	h1 {
 		color: #ff3e00;
 		text-transform: uppercase;
 		font-size: 4em;
 		font-weight: 100;
+	}
+	section {
+		flex-grow:1;
 	}
 	@media (min-width: 640px) {
 		main {
@@ -44,7 +51,8 @@
 <main>
 	<h1>Hello {name}!</h1>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-	<br/>
 	<!-- <DragTest></DragTest> -->
-	<WindowOne></WindowOne>
+	<section>
+		<WindowOne></WindowOne>
+	</section>
 </main>
